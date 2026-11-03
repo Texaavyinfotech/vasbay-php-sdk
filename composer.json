@@ -1,0 +1,56 @@
+{
+    "name": "texaavy/vasbay-php-sdk",
+    "description": "Official VASbay PHP SDK for SMS, WhatsApp, RCS and messaging APIs.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["vasbay", "sms", "bulk-sms", "otp", "dlt", "sms-api", "sms-gateway", "voice", "obd"],
+    "homepage": "https://vasbay.com",
+    "authors": [
+        {
+            "name": "Texaavy Infotech Pvt Ltd",
+            "homepage": "https://vasbay.com"
+        }
+    ],
+    "support": {
+        "docs": "https://vasbay.com/api-documentation"
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6 || ^10.5 || ^11.5 || ^12.0"
+    },
+    "suggest": {
+        "illuminate/support": "To use the optional Laravel service provider, facade and notification channel (Laravel 9+)."
+    },
+    "autoload": {
+        "psr-4": {
+            "Texaavy\\Vasbay\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Texaavy\\Vasbay\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Texaavy\\Vasbay\\Laravel\\VasbayServiceProvider"
+            ],
+            "aliases": {
+                "Vasbay": "Texaavy\\Vasbay\\Laravel\\Facades\\Vasbay"
+            }
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
