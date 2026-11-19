@@ -3,7 +3,20 @@
     "description": "Official VASbay PHP SDK for SMS, WhatsApp, RCS and messaging APIs.",
     "type": "library",
     "license": "MIT",
-    "keywords": ["vasbay", "sms", "bulk-sms", "otp", "dlt", "sms-api", "sms-gateway", "voice", "obd"],
+    "keywords": [
+        "vasbay",
+        "texaavy",
+        "sms",
+        "whatsapp",
+        "rcs",
+        "bulk-sms",
+        "otp",
+        "dlt",
+        "sms-api",
+        "sms-gateway",
+        "voice",
+        "obd"
+    ],
     "homepage": "https://vasbay.com",
     "authors": [
         {
@@ -12,7 +25,9 @@
         }
     ],
     "support": {
-        "docs": "https://vasbay.com/api-documentation"
+        "docs": "https://vasbay.com/api-documentation",
+        "issues": "https://github.com/Texaavyinfotech/vasbay-php-sdk/issues",
+        "source": "https://github.com/Texaavyinfotech/vasbay-php-sdk"
     },
     "require": {
         "php": ">=7.4",
